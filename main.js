@@ -1,24 +1,25 @@
-function setup()
-{
-canvas=createCanvas(600, 400);
-canvas.position(110, 250);
-video=createCapture(VIDEO);
+
+function setup() {
+canvas = createCanvas(640, 480);
+canvas.position(150, 150);
+video = createCapture(VIDEO);
 video.hide();
-tint_color="";
+
 }
 
-function draw()
-{
-image(video,0,0,600,400);
-tint(tint_color);
-}
+function draw() {
+image(video, 230, 150, 220, 200);
 
-function take_snapshot()
-{
-save('student_name.png');
-}
+fill(255, 0, 0);
+stroke(0, 128, 0);
+elipse(50, 50, 80);
 
-function filter_tint()
-{
-tint_color=document.getElementById("color-name").value;
+
+fill(255, 0, 0);
+stroke(0, 128, 0)
+rect(90, 40, 460, 20);
+
+rect(90, 40, 460, 20);
+
+
 }
